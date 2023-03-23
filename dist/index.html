@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!--CSS for standard screens-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <link href="css/main.css" rel="stylesheet" />
+
+    <title>James Penton</title>
+
+    <!--Font awesome stuff-->
+    <script
+      src="https://kit.fontawesome.com/dc4b8dd77e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Font - Shrikhand Regular and Roboto Regular-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--Nav Bar-->
+    <nav class="p-2 navbar navbar-expand-sm navbar-light bg-light ml-auto">
+      <a href="#" class="navbar-brand mb-0 h1">James Penton</a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                My Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="#" class="dropdown-item">ohmyfood</a>
+                <a href="#" class="dropdown-item">Booki</a>
+                <a href="#" class="dropdown-item">Best Books of 2022</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a
+              download="James Penton's CV"
+              target="_blank"
+              href="../dist/assets/James Penton Web Dev CV Version 2.0.pdf"
+              class="nav-link active"
+              >Download my CV</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Hero image-->
+    <div class="hero d-flex justify-content-center align-items-center">
+      <div class="hello-card square-box display-4">Hello!</div>
+
+      <div class="whiteVeil"></div>
+      <div class="make-websites justify-content-center align-items-center">
+        <div class="card mb-3" style="max-width: 540px">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">James Penton</h5>
+                <p class="card-text">React Front End Developer</p>
+                <p class="card-text">
+                  <small class="text-muted tech-stack"
+                    >Tech Stack:
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <i class="fa-brands fa-bootstrap"></i
+                    ><i class="fa-brands fa-square-js"></i
+                    ><i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-react"></i>
+                  </small>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="../dist/images/robot.jpg"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="justify-content-center arrows">
+          <a href="#"
+            ><i class="justify-content-center fa-solid fa-angles-down"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Links to projects-->
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/colouringpencils.jpg" alt="pencils" />
+            </div>
+            <div class="card-body">Info</div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/colouringpencils.jpg" alt="pencils" />
+            </div>
+            <div class="card-body">
+              <div class="dropdown">
+                <button>ohmyfood</button>
+                <div>
+                  <p>
+                    A website that allowed you to choose your meal before you
+                    got to the restaurant!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-img">
+              <img src="./images/colouringpencils.jpg" alt="pencils" />
+            </div>
+            <div class="card-body">Info</div>
+            <div class="card-footer">
+              <button class="btn btn-danger">Click me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bootstrap script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

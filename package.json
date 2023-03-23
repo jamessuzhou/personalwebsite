@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Visual Studio Dark",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  "name": "jamespenton.com",
+  "version": "1.0.0",
+  "description": "jamespenton.com personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}

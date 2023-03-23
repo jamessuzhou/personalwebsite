@@ -1,0 +1,147 @@
+@-webkit-keyframes widen {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes widen {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: black;
+  background-image: url("../images/man-typing.jpg");
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hello-card {
+  color: white;
+  z-index: 1;
+  -webkit-animation: disappear 500ms ease 1000ms;
+          animation: disappear 500ms ease 1000ms;
+}
+
+.whiteVeil {
+  z-index: 2;
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 100vh;
+  -webkit-animation: widen 2000ms ease 1000ms;
+          animation: widen 2000ms ease 1000ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transition: opacity 1000ms, visibility 1000ms;
+}
+
+.make-websites {
+  z-index: 3;
+  position: absolute;
+  -webkit-animation: 1000ms ease 1200ms appear forwards;
+          animation: 1000ms ease 1200ms appear forwards;
+  opacity: 0;
+}
+.make-websites .arrows {
+  -webkit-animation: 1000ms ease-in-out 1200 bounce;
+          animation: 1000ms ease-in-out 1200 bounce;
+  -webkit-animation-iteration-count: 3.5;
+          animation-iteration-count: 3.5;
+}
+
+.fa-brands {
+  margin: 5px;
+}/*# sourceMappingURL=main.css.map */
